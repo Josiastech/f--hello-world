@@ -20,3 +20,30 @@ let main argv =
     printfn "Hello World from F#!"
     0 // return an integer exit code
 ```
+
+Define a new function to print a name.
+
+```fsharp
+let printGreeting name =
+    printfn "Hello %s from F#!" name
+```
+
+Call the function
+
+```fsharp
+printGreeting "Ana"
+```
+
+the entire piece of code will look like the following:
+
+```fsharp
+open System
+
+let printGreeting name =
+    printfn "Hello %s from F#!" name
+
+[<EntryPoint>]
+let main argv =
+    printGreeting "Ana"
+    0 // return an integer exit code
+```
